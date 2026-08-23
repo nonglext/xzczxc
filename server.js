@@ -50,7 +50,6 @@ app.get("/check", async (req, res) => {
 
         console.log("[RESULT] " + JSON.stringify(result));
         res.json(result);
-
     } catch (err) {
         console.error("[ERROR] " + err.message);
         res.json({ success: false, ip: ip, isVPN: false, isp: "Ошибка", error: err.message });
